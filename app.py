@@ -12,8 +12,8 @@ def hello_world():
 
 @app.route('/file')
 def get_file():
-    content = open('static/state-income.csv').read()
-    return Response(content, mimetype='text/csv')
+    content = open('static/state-income.json').read()
+    return Response(content, mimetype='application/json')
 
 
 if __name__ == '__main__':
